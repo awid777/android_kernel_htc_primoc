@@ -1013,7 +1013,7 @@ CONFIG_WLAN=y
 # CONFIG_HOSTAP is not set
 CONFIG_BCMDHD=m
 # CONFIG_BCMDHD_SOFTAP is not set
-CONFIG_BCMDHD_FW_PATH="/system/etc/firmware/fw_bcm4330.bin"
+CONFIG_BCMDHD_FW_PATH="/system/vendor/firmware/fw_bcm4330.bin"
 CONFIG_BCMDHD_NVRAM_PATH="/etc/calibration"
 
 #
