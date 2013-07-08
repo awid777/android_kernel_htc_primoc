@@ -2943,14 +2943,12 @@ static int maxim_batt_INI_reload_flag_update(void)
 			}
 
 		mutex_lock(&htc_batt_info.lock);
-		smem_batt_info->INI_flag = 11223355;
 		htc_batt_info.rep.INI_flag = 1;
 		BATT_LOG("To force re-load batt maxim INI param -> INI_flag:%d\n.", smem_batt_info->INI_flag);
 		mutex_unlock(&htc_batt_info.lock);
 	}
 	else {
 		mutex_lock(&htc_batt_info.lock);
-		smem_batt_info->INI_flag = 88888888;
 		htc_batt_info.rep.INI_flag = 0;
 		mutex_unlock(&htc_batt_info.lock);
 	}
